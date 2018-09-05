@@ -192,9 +192,8 @@ body {
 }
 
 .block_skills {
-    background-image: -webkit-linear-gradient(top,#6e42ab,#43aeb8);
     overflow: hidden;
-    background-attachment: fixed;
+    background: fixed -webkit-linear-gradient(top,#6e42ab,#43aeb8);
 }
 
 .skills {
@@ -239,13 +238,11 @@ body {
 }
 
 .block_job {
-    background-image: url('../images/software.png');
-    background-size: cover;
-    background-repeat: no-repeat;
     overflow: hidden;
-    background-attachment: fixed;
     padding-top: 10px;
     padding-bottom: 50px;
+    background: fixed url('../images/software.jpg') center no-repeat;
+    background-size: cover;
 }
 
 .block_completed_tasks {
@@ -282,7 +279,7 @@ body {
 }
 
 .block_job .carousel-indicators {
-top: 102%;
+    top: 102%;
 }
 
 .block_job .carousel-inner p {
@@ -616,10 +613,7 @@ summary:hover {
 }
 
 .hover_block3:hover {
-    border-bottom-left-radius: 40px;
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 0;
-    border-top-left-radius: 0;
+    border-radius: 0 40px 0 40px;
 }
 
 .hover_block6:hover {
