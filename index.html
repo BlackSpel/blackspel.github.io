@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Мое портфолио</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
@@ -52,7 +53,7 @@
   <div class="block_skills" id="scroll_block_skills">
     <div class="skills clearfix">
       <h1>Мои навыки:</h1>
-      <div class="block_layout wow bounceInLeft" data-wow-delay="0.2s">
+      <div class="window_slills skills_layout wow bounceInLeft" data-wow-delay="0.2s">
         <div class="skills_head">Вёрстка сайтов:</div>
         <p><span class="icon select"></span>Чистый, комментированный, валидный код.</p>
         <p><span class="icon select"></span>Адаптивная вёрстка. Bootstrap.</p>
@@ -60,7 +61,15 @@
         <p><span class="icon select"></span>SEO - первоначальная настройка. Photoshop.</p>
         <p><span class="icon select"></span>Landing-page, сайты-визитки, сайты-каталоги.</p>
       </div>
-      <div class="block_php wow bounceInRight" data-wow-delay="0.2s">
+      <div class="window_slills skills_js wow bounceInUp" data-wow-delay="0.2s">
+        <div class="skills_head">Написание Java Script кода:</div>
+        <p><span class="icon select"></span>AJAX</p>
+        <p><span class="icon select"></span>ES6</p>
+        <p><span class="icon select"></span>Cookie</p>
+        <p><span class="icon select"></span>Работа с CSS</p>
+        <p><span class="icon select"></span>Библиотека jQuery</p>
+      </div>
+      <div class="window_slills skills_php wow bounceInRight" data-wow-delay="0.2s">
         <div class="skills_head">Написание PHP кода:</div>
         <p><span class="icon select"></span>Работа с БД MySQL.</p>
         <p><span class="icon select"></span>ООП, API, Безопасность.</p>
@@ -79,20 +88,20 @@
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="slide" src="./images/nothing.png" alt="First slide">
-              <p>К сожалению портфолио еще не заполнено</p>
+              <img class="slide" src="./images/site_1.jpg" alt="First slide">
+              <p>Игра - Отгадай исполнителя за 20 секунд на Java Script, jQuery</p>
+              <p><a href="/guess-the-artist">https://blackspel.github.io/guess-the-artist</a></p>
             </div>
             <div class="carousel-item">
               <img class="slide" src="./images/nothing.png" alt="Second slide">
-              <p>К сожалению портфолио еще не заполнено</p>
+              <p>Временно пусто</p>
             </div>
             <div class="carousel-item">
               <img class="slide" src="./images/nothing.png" alt="Third slide">
-              <p>К сожалению портфолио еще не заполнено</p>
+              <p>Временно пусто</p>
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -110,47 +119,67 @@
   <div class="block_completed_tasks" id="scroll_block_completed_tasks">
     <div class="skills">
       <h1>Выполненные задачи:</h1>
-        <div class="container  wow bounceInUp" data-wow-delay="0.3s">
-          <div class="row">
-            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-              <div class="card layout">
-                <div class="card-header">
-                  Верстка
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item"><a href="./pages/adaptability.html" target="_blank">Адаптивность</a></li>
-                  <li class="list-group-item"><a href="./pages/modal.html" target="_blank">Модальное окно</a></li>
-                  <li class="list-group-item"><a href="./pages/fonts.html" target="_blank">Шрифты</a></li>
-                  <li class="list-group-item"><a href="./pages/icons.html" target="_blank">Fonts icon, Spoiler text</a></li>
-                  <li class="list-group-item"><a href="./pages/hover.html" target="_blank">Hover</a></li>
-                  <li class="list-group-item">Animation</li>
-                  <li class="list-group-item"><a href="./pages/bootstrap.html" target="_blank">Bootstrap</a></li>
-                  <li class="list-group-item"><a href="./pages/video.html" target="_blank">Видеофон</a></li>
-                  <li class="list-group-item"><a href="./pages/maps.html" target="_blank">Google карты</a></li>
-                </ul>
+      <div class="container  wow bounceInUp" data-wow-delay="0.3s">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+            <div class="card layout">
+              <div class="card-header">
+                Верстка
               </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="./pages/adaptability.html" target="_blank">Адаптивность</a></li>
+                <li class="list-group-item"><a href="./pages/modal.html" target="_blank">Модальное окно</a></li>
+                <li class="list-group-item"><a href="./pages/fonts.html" target="_blank">Шрифты</a></li>
+                <li class="list-group-item"><a href="./pages/icons.html" target="_blank">Fonts icon, Spoiler text</a></li>
+                <li class="list-group-item"><a href="./pages/hover.html" target="_blank">Hover</a></li>
+                <li class="list-group-item a">Animation</li>
+                <li class="list-group-item"><a href="./pages/bootstrap.html" target="_blank">Bootstrap</a></li>
+                <li class="list-group-item"><a href="./pages/video.html" target="_blank">Видеофон</a></li>
+                <li class="list-group-item"><a href="./pages/maps.html" target="_blank">Google карты</a></li>
+              </ul>
             </div>
-            <div class="col-lg-6 col-sm-12">
-              <div class="card php">
-                <div class="card-header">
-                  PHP:
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Управляющие конструкции PHP. Условия </li>
-                  <li class="list-group-item">Управляющие конструкции PHP. Цикл while и do-while</li>
-                  <li class="list-group-item">Функции для работы с массивами</li>
-                  <li class="list-group-item">Циклы for и foreach</li>
-                  <li class="list-group-item">Альтернативный синтаксис</li>
-                  <li class="list-group-item">Функции работы со строками в PHP</li>
-                  <li class="list-group-item">Функции даты и времени в PHP</li>
-                  <li class="list-group-item">Методы GET и POST</li>
-                  <li class="list-group-item">Работа с сессиями</li>
-                  <li class="list-group-item">Работа с куками</li>
-                  <li class="list-group-item">Функции для работы с файлами</li>
-                  <li class="list-group-item">Функции PHP для работы с базами данных</li>
-                  <li class="list-group-item">PHP 7 новые функции</li>
-                </ul>
+          </div>
+          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+            <div class="card layout">
+              <div class="card-header">
+                Java Script
               </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="./pages/factorial.html" target="_blank">Вычесление факториала</a></li>
+                <li class="list-group-item"><a href="./pages/cylinder.html" target="_blank">Вычисление объема и площади цилиндра</a></li>
+                <li class="list-group-item"><a href="./pages/average.html" target="_blank">Вычисление среднего арифмитического</a></li>
+                <li class="list-group-item"><a href="./pages/query.html" target="_blank">Вывод GET параметров</a></li>
+                <li class="list-group-item"><a href="./pages/stopwatch.html" target="_blank">Секундомер</a></li>
+                <li class="list-group-item"><a href="./pages/dom.html" target="_blank">Манипуляции с DOM</a></li>
+                <li class="list-group-item"><a href="./pages/signup.html" target="_blank">Поле регистрации</a></li>
+                <li class="list-group-item"><a href="./pages/calculator.html" target="_blank">Калькулятор</a></li>
+                <li class="list-group-item"><a href="./pages/control-div.html" target="_blank">Управление блоком пользователем</a></li>
+                <li class="list-group-item"><a href="./pages/escape-button.html" target="_blank">Убегающая кнопка</a></li>
+                <li class="list-group-item"><a href="./pages/guess-number.html" target="_blank">Игра - угадай цифру.html</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+            <div class="card php">
+              <div class="card-header">
+                PHP:
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item a">Управляющие конструкции PHP. Условия </li>
+                <li class="list-group-item a">Управляющие конструкции PHP. Цикл while и do-while</li>
+                <li class="list-group-item a">Функции для работы с массивами</li>
+                <li class="list-group-item a">Циклы for и foreach</li>
+                <li class="list-group-item a">Альтернативный синтаксис</li>
+                <li class="list-group-item a">Функции работы со строками в PHP</li>
+                <li class="list-group-item a">Функции даты и времени в PHP</li>
+                <li class="list-group-item a">Методы GET и POST</li>
+                <li class="list-group-item a">Работа с сессиями</li>
+                <li class="list-group-item a">Работа с куками</li>
+                <li class="list-group-item a">Функции для работы с файлами</li>
+                <li class="list-group-item a">Функции PHP для работы с базами данных</li>
+                <li class="list-group-item a">PHP 7 новые функции</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -169,13 +198,12 @@
     </script>
   </div>
 </div>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script>
     $(document).ready(function(){
-        $("a[href*=#scroll_]").on("click", function(e){
+        $("a[href^='#scroll_']").on("click", function(e){
             var anchor = $(this);
             $('html, body').stop().animate({
                 scrollTop: $(anchor.attr('href')).offset().top
@@ -189,6 +217,5 @@
 <script>
     new WOW().init();
 </script>
-
 </body>
 </html>

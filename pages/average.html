@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Функция для вычисления среднего арифметического чисел</title>
+</head>
+<body>
+<h1>Функция для вычисления среднего арифметического чисел</h1>
+<script>
+    function calculate(a, b, c) {
+        const sum = +a + +b + +c,
+            average = sum / arguments.length;
+        document.write("Среднее арифметическое чисел " + a + ", " + b + ", " + c + ": " + average + "<br/>");
+    }
+    const a = prompt("Введите 1 число", ""),
+        b = prompt("Введите 2 число", ""),
+        c = prompt("Введите 3 число", "");
+    calculate(a, b, c);
+</script>
+</body>
+</html>

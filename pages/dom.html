@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Манипуляции с DOM</title>
+</head>
+<body>
+<h1>Манипуляции с DOM</h1>
+<div id="task">
+  <p>1 параграф</p>
+  <a href="https://www.youtube.com/" style="display: block">Ютуб</a>
+  <p>2 параграф</p>
+  <div id="test_div">DIV whith id = test_div</div>
+  <p>3 параграф</p>
+  <a href="https://vk.com/" style="display: block">ВК</a>
+</div>
+<input type="button" onclick="selectAllP()" value="Выбрать все параграфы" style="display: block; width: 200px;">
+<input type="button" onclick="selectAllA()" value="Выбрать все ссылки" style="display: block; width: 200px;">
+<input type="button" onclick="selectDiv()" value="Выбрать DIV" style="display: block; width: 200px;">
+<input type="button" onclick="insertDiv()" value="Изменить текст в DIV" style="display: block; width: 200px;">
+<input type="button" onclick="addP()" value="Добавить новый параграф" style="display: block; width: 200px;">
+<script>
+    function selectAllP() {
+        const divTask = document.getElementById('task'),
+            TasksP = divTask.getElementsByTagName('p');
+        for(let i = 0; i < TasksP.length; i++) {
+            const TaskP = TasksP[i];
+            if(TaskP.style.border === '') TaskP.style.border = "1px solid black";
+            else TaskP.style.border = '';
+        }
+    }
+
+    function selectAllA() {
+        const divTask = document.getElementById('task'),
+            TasksA = divTask.getElementsByTagName('a');
+        for(let i = 0; i < TasksA.length; i++) {
+            let TaskA = TasksA[i];
+            if(TaskA.style.border === '') TaskA.style.border = "1px solid red";
+            else TaskA.style.border = '';
+        }
+    }
+
+    function selectDiv() {
+        const TaskDiv = document.getElementById('test_div');
+        if(TaskDiv.style.border === '') TaskDiv.style.border = "1px solid blue";
+        else TaskDiv.style.border = '';
+    }
+
+    function insertDiv() {
+        const TaskDiv = document.getElementById('test_div');
+        if(TaskDiv.innerHTML === 'DIV whith id = test_div') TaskDiv.innerHTML = 'Измененный текст';
+        else if(TaskDiv.innerHTML === 'Измененный текст') TaskDiv.innerHTML = 'Измененный текст опять';
+        else TaskDiv.innerHTML = 'DIV whith id = test_div';
+    }
+
+    function addP() {
+        const P = document.createElement('p'),
+            Task = document.getElementById('task');
+        P.innerHTML = "Новый созданный параграф";
+        Task.appendChild(P);
+    }
+</script>
+</body>
+</html>

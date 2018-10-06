@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Угадай цифру</title>
+  <style>
+    .green {
+      background-color: green;
+      color: white;
+      width: 300px;
+    }
+
+    .red {
+      background-color: red;
+      color: white;
+      width: 300px;
+    }
+
+    .orange {
+      background-color: orange;
+      color: white;
+      width: 300px;
+    }
+  </style>
+</head>
+<body id="body">
+<h1>Угадай цифру</h1>
+<input type="text" id="input">
+<input type="button" id="button" value="Проверить число">
+<div id="results">
+  <div id="divConst" class="orange">Введите число от 1 до 10</div>
+</div>
+<script>
+    function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    let input = document.getElementById('input'),
+        button = document.getElementById('button'),
+        results = document.getElementById('results'),
+        count = getRandomInt(1, 10);
+
+    button.onclick = function () {
+        const firstDiv = results.firstChild,
+            div = document.createElement('div');
+        if(input.value) {
+            if(+input.value > 10 || +input.value < 1) {
+                div.innerHTML = 'Введите число от 1 до 10';
+                div.className = 'red';
+                div.style.backgroundColor = 'blue';
+            }
+            else if(+count === +input.value) {
+                div.innerHTML = 'Наше число ' + count + ' = ' + 'вашему числу ' + input.value;
+                div.className = 'green';
+            }
+            else {
+                div.innerHTML = 'Наше число ' + count + ' != ' + 'вашему числу ' + input.value;
+                div.className = 'red';
+            }
+            results.insertBefore(div, firstDiv);
+            count = getRandomInt(1, 10);
+        }
+        else {
+            div.innerHTML = 'Введите число от 1 до 10';
+            div.className = 'orange';
+            results.insertBefore(div, firstDiv);
+            count = getRandomInt(1, 10);
+        }
+    }
+
+</script>
+</body>
+</html>

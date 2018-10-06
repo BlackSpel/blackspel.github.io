@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Двигать DIV по странице</title>
+</head>
+<body>
+<h1>Двигать DIV по странице</h1>
+<p>Монжно двигать так же с помощью клавиатуры на стрелках</p>
+<input type="button" value="Вверх" id="up"><br/>
+<input type="button" value="Лево" id="left">
+<input type="button" value="Право" id="right"><br/>
+<input type="button" value="Вниз" id="down">
+<div id="player" class="player" style="position: absolute; top: 100px; left: 300px; background-color: blue; color: white; box-shadow: black 0 0 10px; width: 50px; height: 50px; line-height: 50px; text-align: center;">
+  Игрок
+</div>
+<script>
+    window.onload = function () {
+        function getStyle(element, styleName) {
+            return window.getComputedStyle(element, null)[styleName];
+        }
+        const player = document.getElementById('player'),
+            up = document.getElementById('up'),
+            left = document.getElementById('left'),
+            right = document.getElementById('right'),
+            down = document.getElementById('down');
+
+        function move(key, direction) {
+            key.onclick = function () {
+                if(key === up || key === left) {
+                    player.style[direction] = +getStyle(player, direction).replace('px', '') - 10 + 'px';
+                }
+                else {
+                    player.style[direction] = +getStyle(player, direction).replace('px', '') + 10 + 'px';
+                }
+            }
+        }
+
+        move(up, "top");
+        move(left, "left");
+        move(right, "left");
+        move(down, "top");
+
+        window.addEventListener('keydown', function (e) {
+            if(e.key === "ArrowUp") player.style.top = +getStyle(player, 'top').replace('px', '') - 10 + 'px'; //Кнопка вверх
+            else if (e.key === "ArrowLeft") player.style.left = +getStyle(player, 'left').replace('px', '') - 10 + 'px'; // Влево
+            else if (e.key === "ArrowRight") player.style.left = +getStyle(player, 'left').replace('px', '') + 10 + 'px'; // Вправо
+            else if (e.key === "ArrowDown") player.style.top = +getStyle(player, 'top').replace('px', '') + 10 + 'px'; // Вниз
+        }, false)
+    };
+
+    window.onbeforeunload = function () {
+        return "Уверены?";
+    }
+</script>
+</body>
+</html>

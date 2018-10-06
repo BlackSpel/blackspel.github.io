@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Вычисление объема и площади цилиндра</title>
+</head>
+<body>
+<h1>Вычисление объема и площади цилиндра</h1>
+<script>
+    const r = +prompt("Введите радиус цилиндра"),
+        h = +prompt("Введите высоту цилиндра"),
+        V = 3.14 * r*r * h,
+        S = 2 * 3.14 * r * ( r + h );
+    document.write("Площадь поверхности цилиндра(S) = " + S + "<br/>" + "Объем цилиндра(V) = " + V);
+</script>
+</body>
+</html>

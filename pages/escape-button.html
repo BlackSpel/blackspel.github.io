@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Убегающая кнопка</title>
+  <style>
+    input {
+      position: absolute;
+      top: 100px;
+      left: 10px;
+      height: 40px;
+      width: 250px;
+      font-size: 25px;
+    }
+  </style>
+</head>
+<body>
+<h1>Убегающая кнопка</h1>
+<input type="button" value="Получить скидку" id="button">
+<script>
+    function getStyle(element, styleName) {
+        return window.getComputedStyle(element, null)[styleName];
+    }
+
+    let button = document.getElementById('button'),
+        buttonTop;
+    button.onmouseover = function () {
+        buttonTop = +getStyle(button, 'top').replace('px', '');
+        if(buttonTop === 100) {
+            button.style.top = "200px";
+            button.style.left = "100px";
+        }
+        else if (buttonTop === 200) {
+            button.style.top = "90px";
+            button.style.left = "300px";
+        }
+        else {
+            button.style.top = "100px";
+            button.style.left = "10px";
+        }
+
+    };
+</script>
+</body>
+</html>

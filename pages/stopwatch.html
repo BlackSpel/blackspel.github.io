@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Секундомер</title>
+</head>
+<body>
+<h1>Секундомер</h1>
+<div id="timer"></div>
+<input type="button" value="Старт" id="start">
+<input type="button" value="Пауза" id="pause">
+<input type="button" value="Сбросить" id="reset">
+<script>
+    let reset = document.getElementById('reset'),
+        setInt,
+        hours = 0,
+        minuts = 0,
+        seconds = 0;
+    timer.innerHTML = hours + ':' + minuts + ':' + seconds;
+    function addTime() {
+        if(seconds < 59) ++seconds;
+        else {
+            seconds = 0;
+            if(minuts < 59) ++minuts;
+            else {
+                minuts = 0;
+                ++hours;
+            }
+        }
+        document.getElementById('timer').innerHTML = hours + ':' + minuts + ':' + seconds;
+    }
+    function addTim() {
+        seconds++;
+        document.getElementById('timer').innerHTML = hours + ':' + minuts + ':' + seconds;
+    }
+    document.getElementById('start').onclick = function () {
+        setInt = setInterval(addTime, 1000);
+    };
+    document.getElementById('pause').onclick = function () {
+        clearInterval(setInt);
+    };
+    document.getElementById('reset').onclick = function () {
+        seconds = 0; minuts = 0; hours = 0;
+        document.getElementById('timer').innerHTML = hours + ':' + minuts + ':' + seconds;
+        clearInterval(setInt);
+    };
+</script>
+</body>
+</html>

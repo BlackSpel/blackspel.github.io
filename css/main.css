@@ -198,19 +198,23 @@ body {
 
 .skills {
     margin: 10px auto;
-    width: 900px;
+    width: 1240px;
 }
 
-.block_layout {
+.window_slills {
     height: 400px;
     width: 400px;
     margin: 50px 0;
-    float: left;
     background-color: white;
     box-shadow: black 0 0 25px;
 }
 
-.block_layout:hover, .block_php:hover {
+.window_slills:nth-child(3) {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.skills_layout:hover, .skills_php:hover, .skills_js:hover {
     box-shadow: black 0 0 10px;
 }
 
@@ -224,17 +228,20 @@ body {
     font-size: 20px;
 }
 
-.block_layout > p, .block_php > p {
+.skills_layout > p, .skills_php > p, .skills_js > p {
     padding: 10px;
 }
 
-.block_php {
-    height: 400px;
-    width: 400px;
-    margin: 50px 0;
-    float: right;
-    background-color: white;
-    box-shadow: black 0 0 25px;
+.skills_layout {
+    float: left;
+}
+
+.skills_js {
+    float: left;
+}
+
+.skills_php {
+    float: left;
 }
 
 .block_job {
@@ -260,7 +267,7 @@ body {
     display: block;
 }
 
-.card.layout li:hover {
+.skills .container li:not(.a):hover {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -356,14 +363,16 @@ body {
     .skills {
         width: 200px;
     }
-    .block_layout {
-        margin-bottom: 0;
+    .window_slills {
         width: 200px;
         height: 400px;
     }
-    .block_php {
-        width: 200px;
-        height: 400px;
+    .window_slills:nth-child(3) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .skills_layout, .skills_js {
+        margin-bottom: 0;
     }
     .photo {
         height: 200px;
@@ -402,14 +411,16 @@ body {
     .skills {
         width: 300px;
     }
-    .block_layout {
-        margin-bottom: 0;
+    .window_slills {
         width: 300px;
         height: 300px;
     }
-    .block_php {
-        width: 300px;
-        height: 300px;
+    .window_slills:nth-child(3) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .skills_layout, .skills_js {
+        margin-bottom: 0;
     }
     .photo {
         height: 270px;
@@ -459,7 +470,11 @@ body {
     .skills {
         width: 400px;
     }
-    .block_layout {
+    .window_slills:nth-child(3) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .skills_layout, .skills_js {
         margin-bottom: 0;
     }
     .photo {
@@ -493,8 +508,32 @@ body {
     .skills {
         width: 400px;
     }
-    .block_layout {
+    .window_slills:nth-child(3) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .skills_layout, .skills_js  {
         margin-bottom: 0;
+    }
+}
+
+@media(min-width:993px) and (max-width:1200px) {
+    .skills {
+        width: 950px;
+    }
+    .window_slills {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media(min-width:1201px) and (max-width:1366px) {
+    .skills {
+        width: 1200px;
+    }
+    .window_slills {
+        width: 380px;
+        height: 380px;
     }
 }
 
@@ -624,7 +663,7 @@ summary:hover {
 /* Стили bootstrap */
 
 .bootstrap_wrapper {
-    width: 70%;
+    width: 60%;
     background: white;
     margin: 20px auto;
     box-shadow: black 0 0 25px;
@@ -652,4 +691,8 @@ summary:hover {
 .video {
     width: 100%;
     z-index: 9;
+}
+
+.carousel-item > p {
+    text-align: center;
 }

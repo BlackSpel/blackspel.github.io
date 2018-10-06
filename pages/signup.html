@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Поле регистрации</title>
+</head>
+<body>
+<h1>Поле регистрации</h1>
+<form action="/" method="GET" name="form1">
+  <label for="firstName">Имя</label><br/>
+  <input type="text" name="firstName" id="firstName" required><br/>
+  <label for="lastName">Фамилия</label><br/>
+  <input type="text" name="lastName" id="lastName" required><br/>
+  <label for="login">Логин</label><br/>
+  <input type="text" name="login" id="login" required><br/>
+  <label for="pass">Пароль</label><br/>
+  <input type="password" name="pass" id="pass" required><br/>
+  <label for="pass_sumbit">Подтверждение пароля</label><br/>
+  <input type="password" name="pass_sumbit" id="pass_sumbit" required><br/>
+  <label for="email">Емайл</label><br/>
+  <input type="email" name="emailt" id="email" required><br/>
+  <label for="sex">Пол:</label><br/>
+  Мужской<input type="radio" name="sex" id="sex" checked="checked"><br/>
+  Женский<input type="radio" name="sex"><br/>
+  <input type="reset"><input type="submit" name="sumbit" id="sumbit">
+</form>
+
+<script>
+    window.addEventListener('load', iner, false);
+
+    function iner () {
+        let form = document.form1,
+            button = form1.sumbit,
+            pass = form1.pass,
+            span = document.createElement('span'),
+            invalid = false,
+            passSumbit = form1.pass_sumbit;
+
+        pass.onblur = function () {
+            if(pass.value !== passSumbit.value) {
+                passSumbit.style.backgroundColor = "red";
+                pass.style.backgroundColor = "red";
+                span.innerHTML = "Данные не совпадают";
+                form.insertBefore(span, pass.nextSibling);
+                invalid = true;
+            }
+            else {
+                passSumbit.style.backgroundColor = "white";
+                pass.style.backgroundColor = "white";
+                span.innerHTML = "";
+                invalid = false;
+            }
+        };
+
+        passSumbit.onblur = function () {
+            if(passSumbit.value !== pass.value) {
+                passSumbit.style.backgroundColor = "red";
+                pass.style.backgroundColor = "red";
+                span.innerHTML = "Данные не совпадают";
+                form.insertBefore(span, passSumbit.nextSibling);
+                invalid = true;
+            }
+            else {
+                passSumbit.style.backgroundColor = "white";
+                pass.style.backgroundColor = "white";
+                span.innerHTML = "";
+                invalid = false;
+            }
+        };
+
+        button.onclick = function () {
+            if(invalid === true) {
+                alert('Пароли не совпадают');
+                return false;
+            }
+        }
+    }
+
+</script>
+</body>
+</html>

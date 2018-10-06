@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Калькулятор</title>
+  <style>
+    .wrapper {
+      height: 500px;
+      width: 300px;
+      border: 1px solid black;
+      margin: 20px;
+    }
+
+    .input {
+      margin: 10px;
+      height: 50px;
+      width: 125px;
+      border: 1px solid black;
+      float: left;
+    }
+
+    .input > input {
+      height: 98%;
+      width: 98%;
+    }
+
+    .wrapper > input {
+      margin: 10px;
+      height: 50px;
+      width: 280px;
+    }
+
+    .result {
+      height: 100px;
+      width: 280px;
+      margin: 10px;
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+<h1>Калькулятор</h1>
+<p>DOM Level 0</p>
+<div class="wrapper">
+  <div class="input"><input type="text" id="one"></div>
+  <div class="input"><input type="text" id="two"></div>
+  <input type="button" value="+"  id="plus">
+  <input type="button" value="-" id="minus">
+  <input type="button" value="*" id="multiplication">
+  <input type="button" value="/" id="division">
+  <div class="result">Результат:<input type="text" readonly id="result"></div>
+</div>
+<p>DOM Level 2</p>
+<div class="wrapper" id="wrapper2">
+  <div class="input"><input type="text" id="one2"></div>
+  <div class="input"><input type="text" id="two2"></div>
+  <input type="button" value="+"  id="plus2">
+  <input type="button" value="-" id="minus2">
+  <input type="button" value="*" id="multiplication2">
+  <input type="button" value="/" id="division2">
+  <div class="result">Результат:<input type="text" readonly id="result2"></div>
+</div>
+<script>
+    const one = document.getElementById('one'),
+        two = document.getElementById('two'),
+        plus = document.getElementById('plus'),
+        minus = document.getElementById('minus'),
+        multiplication = document.getElementById('multiplication'),
+        division = document.getElementById('division'),
+        result = document.getElementById('result');
+
+    plus.onclick = function () {
+        result.value = +one.value + +two.value;
+    };
+
+    minus.onclick = function () {
+        result.value = +one.value - +two.value;
+    };
+
+    multiplication.onclick = function () {
+        result.value = +one.value * +two.value;
+    };
+
+    division.onclick = function () {
+        result.value = +one.value / +two.value;
+    };
+</script>
+<script>
+    const one2 = document.getElementById('one2'),
+        two2 = document.getElementById('two2'),
+        plus2 = document.getElementById('plus2'),
+        wrapper2 = document.getElementById('wrapper2'),
+        minus2 = document.getElementById('minus2'),
+        multiplication2 = document.getElementById('multiplication2'),
+        division2 = document.getElementById('division2'),
+        result2 = document.getElementById('result2');
+
+    wrapper2.addEventListener('click', function (e) {
+        if(e.target === plus2) result2.value = +one2.value + +two2.value;
+        else if(e.target === minus2) result2.value = +one2.value - +two2.value;
+        else if(e.target === multiplication2) result2.value = +one2.value * +two2.value;
+        else if(e.target === division2) result2.value = +one2.value / +two2.value;
+    }, false);
+</script>
+</body>
+</html>

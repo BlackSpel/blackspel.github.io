@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Вывод GET параметров</title>
+</head>
+<body>
+<h1>Вывод GET параметров</h1>
+<h3>Добавьте GET параметры для их отображения<br/>Например "?login=qwerty&password=123456&page=13"</h3>
+<script>
+    document.write("<br/>");
+    let queryString = document.location.search,
+        quetyObj = {};
+    if(queryString) {
+        queryString = queryString.substring(1);
+        const queryArray = queryString.split('&');
+        queryArray.forEach(function (query) {
+            const queryArr = query.split('='),
+                first = queryArr[0];
+            quetyObj[first] = queryArr[1];
+        });
+        for(one in quetyObj) {
+            document.write(one + " = " + quetyObj[one] + "<br/>")
+        }
+    }
+</script>
+</body>
+</html>
