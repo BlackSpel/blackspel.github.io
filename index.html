@@ -84,7 +84,7 @@
       <h1>Мои работы:</h1>
     <div class="container wow zoomInUp" data-wow-delay="0.3s">
       <div class="col-md-12">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -92,16 +92,17 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img class="slide" src="./images/site_1.jpg" alt="First slide">
-              <p>Игра - Отгадай исполнителя за 20 секунд на Java Script, jQuery</p>
-              <p><a href="/guess-the-artist">https://blackspel.github.io/guess-the-artist</a></p>
+              <div class="carousel-caption">
+                <h3>Guess the Artist</h3>
+                <p>Игра - Отгадай исполнителя за 20 секунд на Java Script, jQuery<br/><a href="/guess-the-artist">https://blackspel.github.io/guess-the-artist</a></p>
+              </div>
             </div>
             <div class="carousel-item">
               <img class="slide" src="./images/nothing.png" alt="Second slide">
-              <p>Временно пусто</p>
-            </div>
-            <div class="carousel-item">
-              <img class="slide" src="./images/nothing.png" alt="Third slide">
-              <p>Временно пусто</p>
+              <div class="carousel-caption">
+                <h3>Временно пусто</h3>
+                <p></p>
+              </div>
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
