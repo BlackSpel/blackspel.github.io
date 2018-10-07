@@ -198,12 +198,12 @@ body {
 
 .skills {
     margin: 10px auto;
-    width: 1240px;
+    width: 1030px;
 }
 
 .window_slills {
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 330px;
     margin: 50px 0;
     background-color: white;
     box-shadow: black 0 0 25px;
@@ -459,6 +459,12 @@ body {
         margin-top: 30px;
         width: 100%;
     }
+    .carousel-caption h3 {
+        font-size: 15px;
+    }
+    .carousel-caption p {
+        font-size: 8px !important;
+    }
 }
 
 @media(min-width:481px) and (max-width:768px) {
@@ -493,6 +499,10 @@ body {
     .skills {
         width: 400px;
     }
+    .window_slills {
+        height: 300px;
+        width: 400px;
+    }
     .window_slills:nth-child(3) {
         margin-left: 0;
         margin-right: 0;
@@ -509,6 +519,12 @@ body {
     }
     .block_photo {
         width: 100%;
+    }
+    .carousel-caption h3 {
+        font-size: 20px;
+    }
+    .carousel-caption p {
+        font-size: 10px !important;
     }
 }
 @media(min-width:769px) and (max-width:992px) {
@@ -531,12 +547,22 @@ body {
     .skills {
         width: 400px;
     }
+    .window_slills {
+        height: 300px;
+        width: 400px;
+    }
     .window_slills:nth-child(3) {
         margin-left: 0;
         margin-right: 0;
     }
     .skills_layout, .skills_js  {
         margin-bottom: 0;
+    }
+    .carousel-caption h3 {
+        font-size: 25px;
+    }
+    .carousel-caption p {
+        font-size: 15px !important;
     }
 }
 
@@ -550,15 +576,7 @@ body {
     }
 }
 
-@media(min-width:1201px) and (max-width:1366px) {
-    .skills {
-        width: 1200px;
-    }
-    .window_slills {
-        width: 380px;
-        height: 380px;
-    }
-}
+
 
 /* Стили модального окна */
 
