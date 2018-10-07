@@ -410,6 +410,12 @@ body {
         margin-top: 50px;
         width: 100%;
     }
+    .carousel-caption h3 {
+        font-size: 18px;
+    }
+    .carousel-caption p {
+        font-size: 12px !important;
+    }
 }
 
 @media(min-width:321px) and (max-width:480px) {
@@ -460,10 +466,10 @@ body {
         width: 100%;
     }
     .carousel-caption h3 {
-        font-size: 15px;
+        font-size: 18px;
     }
     .carousel-caption p {
-        font-size: 8px !important;
+        font-size: 12px !important;
     }
 }
 
@@ -521,10 +527,10 @@ body {
         width: 100%;
     }
     .carousel-caption h3 {
-        font-size: 20px;
+        font-size: 23px;
     }
     .carousel-caption p {
-        font-size: 10px !important;
+        font-size: 13px !important;
     }
 }
 @media(min-width:769px) and (max-width:992px) {
@@ -559,10 +565,10 @@ body {
         margin-bottom: 0;
     }
     .carousel-caption h3 {
-        font-size: 25px;
+        font-size: 28px;
     }
     .carousel-caption p {
-        font-size: 15px !important;
+        font-size: 17px !important;
     }
 }
 
