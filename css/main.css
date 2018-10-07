@@ -410,11 +410,15 @@ body {
         margin-top: 50px;
         width: 100%;
     }
+    .carousel-caption {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
     .carousel-caption h3 {
-        font-size: 18px;
+        font-size: 16px;
     }
     .carousel-caption p {
-        font-size: 12px !important;
+        font-size: 10px !important;
     }
 }
 
