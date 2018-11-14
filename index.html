@@ -37,50 +37,73 @@
     </div>
   </nav>
 </header>
-<div class="wrapper">
-  <div class="block_contacts" id="scroll_block_contacts">
-    <div class="block_photo">
-        <img class="photo" src="images/x5.png" alt="Моя фотка">
-        <div class="contacts">
+<main>
+  <div class="block_photo" id="scroll_block_contacts">
+  <div class="container">
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-6 text-right">
+          <img class="photo" src="images/x5.png" alt="Моя фотка">
+        </div>
+        <div class="col-md-6 contacts">
           <p><span class="icon name"></span>Тимур</p>
           <p><span class="icon tg"></span>@BlackSpel</p>
           <p><span class="icon vk"></span><a href="https://vk.com/blackspel">https://vk.com/blackspel</a></p>
           <p><span class="icon mail"></span>mr.blackspell@gmail.com</p>
         </div>
+      </div>
     </div>
   </div>
+  </div>
+
   <div class="block_skills" id="scroll_block_skills">
-    <div class="skills clearfix">
-      <h1>Мои навыки:</h1>
-      <div class="window_slills skills_layout wow bounceInLeft" data-wow-delay="0.2s">
-        <div class="skills_head">Вёрстка сайтов:</div>
-        <p><span class="icon select"></span>Чистый, комментированный, валидный код.</p>
-        <p><span class="icon select"></span>Адаптивная вёрстка. Bootstrap.</p>
-        <p><span class="icon select"></span>Перенос вёрстки на WordPress.</p>
-        <p><span class="icon select"></span>SEO - первоначальная настройка. Photoshop.</p>
-        <p><span class="icon select"></span>Landing-page, сайты-визитки, сайты-каталоги.</p>
-      </div>
-      <div class="window_slills skills_js wow bounceInUp" data-wow-delay="0.2s">
-        <div class="skills_head">Написание Java Script кода:</div>
-        <p><span class="icon select"></span>AJAX</p>
-        <p><span class="icon select"></span>ES6</p>
-        <p><span class="icon select"></span>Cookie</p>
-        <p><span class="icon select"></span>Работа с CSS</p>
-        <p><span class="icon select"></span>Библиотека jQuery</p>
-      </div>
-      <div class="window_slills skills_php wow bounceInRight" data-wow-delay="0.2s">
-        <div class="skills_head">Написание PHP кода:</div>
-        <p><span class="icon select"></span>Работа с БД MySQL.</p>
-        <p><span class="icon select"></span>ООП, API, Безопасность.</p>
-        <p><span class="icon select"></span>Написание пагинации.</p>
-        <p><span class="icon select"></span>Фильтр и поиск товаров на сайте.</p>
-        <p><span class="icon select"></span>Настройка плагинов на WordPress</p>
-        <p><span class="icon select"></span>Работа с RedBeanPHP</p>
+    <div class="container">
+      <div class="col-md-12">
+        <h1>Мои навыки:</h1>
+        <div class="row">
+          <div class="col-lg-4 col-md-12 skills wow bounceInLeft" data-wow-delay="0.2s">
+            <div class="window_slills">
+              <div class="skills_head">Вёрстка сайтов:</div>
+              <p><span class="icon select"></span>Чистый, комментированный, валидный код.</p>
+              <p><span class="icon select"></span>Адаптивная вёрстка, Bootstrap.</p>
+              <p><span class="icon select"></span>Landing-page, сайты-визитки, сайты-каталоги.</p>
+              <p><span class="icon select"></span>SEO - первоначальная настройка.</p>
+              <p><span class="icon select"></span>Работа с Photoshop.</p>
+              <p><span class="icon select"></span>Перенос вёрстки на WordPress.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 skills wow bounceInUp" data-wow-delay="0.2s">
+            <div class="window_slills">
+              <div class="skills_head">Написание Java Script кода:</div>
+              <p><span class="icon select"></span>AJAX.</p>
+              <p><span class="icon select"></span>ES6.</p>
+              <p><span class="icon select"></span>Прототипирование.</p>
+              <p><span class="icon select"></span>Регулярные выражения.</p>
+              <p><span class="icon select"></span>ООП в JavaScript.</p>
+              <p><span class="icon select"></span>Библиотека jQuery.</p>
+              <p><span class="icon select"></span>Уверенная работа с DOM и с событиями.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 skills wow bounceInRight" data-wow-delay="0.2s">
+            <div class="window_slills">
+              <div class="skills_head">Написание PHP кода:</div>
+              <p><span class="icon select"></span>Работа с БД MySQL.</p>
+              <p><span class="icon select"></span>Объектно-ориентированное программирование.</p>
+              <p><span class="icon select"></span>Безопасность. Защита от XSS, CSRF, SQL инъекций.</p>
+              <p><span class="icon select"></span>Фреймворк Laravel.</p>
+              <p><span class="icon select"></span>Автоматические тесты. Юнит и интеграционные тесты.</p>
+              <p><span class="icon select"></span>Настройка плагинов на WordPress.</p>
+              <p><span class="icon select"></span>Работа с RedBeanPHP.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+
+
   <div class="block_job" id="scroll_block_job">
-      <h1>Мои работы:</h1>
+    <h1>Мои работы:</h1>
     <div class="container wow zoomInUp" data-wow-delay="0.3s">
       <div class="col-md-12">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
@@ -89,7 +112,7 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           </ol>
           <div class="carousel-inner">
-          	<div class="carousel-item active">
+            <div class="carousel-item active">
               <img class="slide" src="./images/site_2.jpg" alt="Second slide">
               <div class="carousel-caption">
                 <h3>ALLStuff</h3>
@@ -155,7 +178,7 @@
                 <li class="list-group-item"><a href="./pages/calculator.html" target="_blank">Калькулятор</a></li>
                 <li class="list-group-item"><a href="./pages/control-div.html" target="_blank">Управление блоком пользователем</a></li>
                 <li class="list-group-item"><a href="./pages/escape-button.html" target="_blank">Убегающая кнопка</a></li>
-                <li class="list-group-item"><a href="./pages/guess-number.html" target="_blank">Игра - угадай цифру.html</a></li>
+                <li class="list-group-item"><a href="./pages/guess-number.html" target="_blank">Игра - угадай цифру</a></li>
               </ul>
             </div>
           </div>
@@ -197,7 +220,7 @@
         VK.Widgets.Comments("vk_comments", {limit: 10, attach: "*"});
     </script>
   </div>
-</div>
+</main>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
