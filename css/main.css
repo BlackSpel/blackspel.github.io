@@ -364,6 +364,9 @@ body {
     .photo {
         height: 100px;
     }
+    .contacts > p {
+        font-size: 10px;
+    }
     .carousel-caption {
         padding-top: 20px;
         padding-bottom: 0;
@@ -398,8 +401,8 @@ body {
     .photo {
         height: 100px;
     }
-    .contacts {
-        position: static;
+    .contacts > p {
+        font-size: 10px;
     }
     .skills {
         margin: 5px 0;
@@ -443,9 +446,6 @@ body {
     }
     .photo {
         height: 200px;
-    }
-    .contacts {
-        position: static;
     }
     .skills {
         margin: 10px 0;
