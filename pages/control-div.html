@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>Двигать DIV по странице</h1>
-<p>Монжно двигать так же с помощью клавиатуры на стрелках</p>
+<p>Монжно двигать DIV с помощью мышки, а так же стрелками на клавиатуре</p>
 <input type="button" value="Вверх" id="up"><br/>
 <input type="button" value="Лево" id="left">
 <input type="button" value="Право" id="right"><br/>
@@ -46,11 +46,26 @@
             else if (e.key === "ArrowLeft") player.style.left = +getStyle(player, 'left').replace('px', '') - 10 + 'px'; // Влево
             else if (e.key === "ArrowRight") player.style.left = +getStyle(player, 'left').replace('px', '') + 10 + 'px'; // Вправо
             else if (e.key === "ArrowDown") player.style.top = +getStyle(player, 'top').replace('px', '') + 10 + 'px'; // Вниз
-        }, false)
-    };
+        }, false);
 
-    window.onbeforeunload = function () {
-        return "Уверены?";
+        let dragPlayer = function (e){
+            let startX = player.offsetLeft,
+                startY = player.offsetTop,
+                deltaX = e.clientX - startX,
+                deltaY = e.clientY - startY,
+                listener = function (e) {
+                    player.style.top = (+e.clientY - deltaY) + 'px';
+                    player.style.left = (+e.clientX - deltaX) + 'px';
+                };
+
+            window.addEventListener('mousemove', listener);
+
+            window.addEventListener('mouseup', function () {
+                window.removeEventListener('mousemove',listener);
+            });
+        };
+
+        player.addEventListener('mousedown', dragPlayer);
     }
 </script>
 </body>
