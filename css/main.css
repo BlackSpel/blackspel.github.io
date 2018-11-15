@@ -132,7 +132,7 @@ body {
     border-radius: 50%;
 }
 
-.block_photo:hover .photo {
+.block_photo > .container:hover .photo {
     animation-name: flip;
     animation-duration: 0.4s;
 }
