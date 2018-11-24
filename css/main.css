@@ -295,9 +295,10 @@ body {
     font-size: 30px;
 }
 
-.h1-certificate {
-    color: black !important;
-    text-shadow: none;
+.block_certificates {
+    overflow: hidden;
+    background-image: linear-gradient(to top, rgba(74,118,168, 0.8),  rgba(0, 0, 100, 0.8));
+    border-top: 1px solid black;
 }
 
 .window_certificate {
