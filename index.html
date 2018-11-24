@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
   <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/lightbox.min.css">
 </head>
 <body>
 <header class="header">
@@ -31,7 +32,7 @@
           <a class="nav-link" href="#scroll_block_completed_tasks">Выполненные задачи</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#scroll_block_comments">Комментарии</a>
+          <a class="nav-link" href="#scroll_block_certificates">Сертификаты</a>
         </li>
       </ul>
     </div>
@@ -101,7 +102,6 @@
     </div>
   </div>
 
-
   <div class="block_job" id="scroll_block_job">
     <h1>Мои работы:</h1>
     <div class="container wow zoomInUp" data-wow-delay="0.3s">
@@ -139,6 +139,7 @@
       </div>
     </div>
   </div>
+
   <div class="block_completed_tasks" id="scroll_block_completed_tasks">
     <div class="skills">
       <h1>Выполненные задачи:</h1>
@@ -208,6 +209,34 @@
       </div>
     </div>
   </div>
+
+  <div class="block_certificates" id="scroll_block_certificates">
+    <div class="container">
+      <div class="col-md-12">
+        <h1 class="h1-certificate">Мои сертификаты:</h1>
+        <div class="row">
+          <div class="col-lg-4 col-md-12 skills">
+            <div class="window_certificate">
+              <div class="skills_head">Сертификат PHP</div>
+              <a href="images/PHP.jpg" data-lightbox="certificate"><img class="img-fluid" src="images/PHP.jpg"></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 skills">
+            <div class="window_certificate">
+              <div class="skills_head">Сертификат JavaScript</div>
+              <a href="images/JavaScript.jpg" data-lightbox="certificate"><img class="img-fluid" src="images/JavaScript.jpg"></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 skills">
+            <div class="window_certificate">
+              <div class="skills_head">Сертификат HTML,CSS</div>
+              <a href="images/HTML.jpg" data-lightbox="certificate"><img class="img-fluid" src="images/HTML.jpg"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Put this script tag to the <head> of your page -->
   <script type="text/javascript" src="https://vk.com/js/api/openapi.js?159"></script>
   <script type="text/javascript">
@@ -236,6 +265,7 @@
         });
     });
 </script>
+<script src="js/lightbox.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script>
     new WOW().init();

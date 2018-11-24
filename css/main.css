@@ -295,6 +295,22 @@ body {
     font-size: 30px;
 }
 
+.h1-certificate {
+    color: black !important;
+    text-shadow: none;
+}
+
+.window_certificate {
+    background-color: white;
+    box-shadow: black 0 0 25px;
+    height: 99%;
+}
+
+.window_certificate:hover {
+    box-shadow: black 0 0 10px;
+}
+
+
 /* Стили адаптивности */
 
 .adaptability_wrapper {
