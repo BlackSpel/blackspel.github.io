@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Guess the artist</title>
+  <meta name="description" content="Guess the artist"/>
+  <meta name="keywords" content="Guess the artist, угадай исполнителя, guess the music, угадай музыку"/>
+  <link href="css/main.css" rel="stylesheet" type="text/css"/>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+</head>
+<body>
+<div class="wrapper">
+  <div class="head">
+    ♫ Guess the artist ♫
+  </div>
+  <div class="block">
+    <div class="info clearfix">
+      <div class="info_left">
+        <div class="number">Трек № <span>0</span></div>
+        <div class="guessed">
+          Угадано: <span>0</span> из <span>0</span>
+        </div>
+      </div>
+      <div class="info-right">
+        <div class="score">
+          Очки: <span>0</span>
+        </div>
+        <div class="record">
+          Ваш рекорд: <span>0</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="response"></div>
+    <div class="time">
+      <span>20</span> сек.
+    </div>
+    <div class="answer">
+      <ul>
+        <li>♫</li>
+        <li>♫</li>
+        <li>♫</li>
+      </ul>
+    </div>
+    <div class="button">
+      <input type="button" value="Начать игру" id="start">
+      <input type="button" value="Следующий трек" id="next">
+    </div>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,4 +1,0 @@
-AddDefaultCharset utf-8
-RewriteEngine On
-RewriteCond %{REQUEST_URI} ^/guess-the-artist
-RewriteRule ^(.*)$ /pages/guess-the-artist/index.html [L]
