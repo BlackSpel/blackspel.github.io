@@ -132,11 +132,6 @@ body {
     border-radius: 50%;
 }
 
-.block_photo > .container:hover .photo {
-    animation-name: flip;
-    animation-duration: 0.4s;
-}
-
 .contacts {
     font-family: 'Noto Serif', serif;
     height: 100px;
@@ -190,7 +185,7 @@ body {
 
 .block_skills {
     overflow: hidden;
-    background: fixed -webkit-linear-gradient(top,#6e42ab,#43aeb8);
+    background: rgba(0, 0, 0, 0.9);
 }
 
 .skills {
@@ -199,13 +194,9 @@ body {
 
 .window_slills {
     background-color: white;
-    box-shadow: black 0 0 25px;
+    box-shadow: dimgray 0 0 15px;
     height: 100%;
     padding-bottom: 40px;
-}
-
-.window_slills:hover {
-    box-shadow: black 0 0 10px;
 }
 
 .skills_head {
@@ -226,12 +217,15 @@ body {
     overflow: hidden;
     padding-top: 10px;
     padding-bottom: 50px;
-    background: fixed url('../images/software.jpg') center no-repeat;
-    background-size: cover;
+}
+
+.block_job > h1 {
+    color: black !important;
+    text-shadow: none;
 }
 
 .block_completed_tasks {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8),  rgba(0, 0, 128, 0.8));
+    background: rgba(0, 0, 0, 0.9);
     overflow: hidden;
     padding-top: 10px;
     padding-bottom: 50px;
@@ -249,14 +243,10 @@ body {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.card {
-    box-shadow: black 0 0 25px;
-}
-
 .slide {
     height: 100%;
     width: 100%;
-    box-shadow: white 0 0 40px;;
+    box-shadow: white 0 0 10px;;
 }
 
 .block_job .carousel {
@@ -267,11 +257,14 @@ body {
     top: 102%;
 }
 
+.block_job .carousel-inner {
+    border: 1px solid black;
+}
+
 .block_job .carousel-inner p {
     color: black;
     padding: 10px;
     font-size: 20px;
-
 }
 
 .block_job .carousel-inner p a:hover {
@@ -279,26 +272,41 @@ body {
 }
 
 .carousel-control-next {
-    background: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent);
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.2), transparent);
 }
 
 .carousel-control-prev {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2), transparent);
 }
 
 .carousel-caption {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .carousel-caption h3 {
-    color: black;
+    color: white;
     font-size: 30px;
+}
+
+.carousel-caption p, .carousel-caption a {
+    color: white !important;
+}
+
+.carousel-indicators li {
+    background-color: gray;
+}
+
+.carousel-indicators .active {
+    background-color: black;
 }
 
 .block_certificates {
     overflow: hidden;
-    background-image: linear-gradient(to top, rgba(74,118,168, 0.8),  rgba(0, 0, 100, 0.8));
-    border-top: 1px solid black;
+}
+
+.block_certificates h1 {
+    color: black;
+    text-shadow: none;
 }
 
 .window_certificate {
@@ -420,9 +428,6 @@ body {
     }
     .contacts > p {
         font-size: 10px;
-    }
-    .skills {
-        margin: 5px 0;
     }
     .carousel-caption h3 {
         font-size: 18px;
