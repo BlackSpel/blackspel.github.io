@@ -185,7 +185,7 @@ body {
 
 .block_skills {
     overflow: hidden;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.85);
 }
 
 .skills {
@@ -194,7 +194,7 @@ body {
 
 .window_slills {
     background-color: white;
-    box-shadow: dimgray 0 0 15px;
+    border: 1px solid white;
     height: 100%;
     padding-bottom: 40px;
 }
@@ -225,7 +225,7 @@ body {
 }
 
 .block_completed_tasks {
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.85);
     overflow: hidden;
     padding-top: 10px;
     padding-bottom: 50px;
@@ -317,6 +317,14 @@ body {
 
 .window_certificate:hover {
     box-shadow: black 0 0 10px;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.85);
+    overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: white;
 }
 
 
