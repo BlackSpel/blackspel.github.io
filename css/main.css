@@ -175,6 +175,10 @@ body {
     background-image: url('../images/mail.png');
 }
 
+.github {
+    background-image: url('../images/github.png');
+}
+
 .select {
     background-image: url('../images/select.png');
 }
