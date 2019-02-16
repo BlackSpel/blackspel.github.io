@@ -414,6 +414,17 @@ footer {
     .carousel-caption p {
         font-size: 10px !important;
     }
+    .skills {
+        margin: 10px 0;
+    }
+    .icon {
+        width: 10px;
+        height: 10px;
+    }
+    .carousel-caption {
+        right: 3%;
+        left: 3%;
+    }
 }
 
 @media(min-width:321px) and (max-width:480px) {
@@ -446,6 +457,17 @@ footer {
     }
     .carousel-caption p {
         font-size: 12px !important;
+    }
+    .skills {
+        margin: 10px 0;
+    }
+    .icon {
+        width: 10px;
+        height: 10px;
+    }
+    .carousel-caption {
+        right: 3%;
+        left: 3%;
     }
 }
 
