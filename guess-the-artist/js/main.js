@@ -63,14 +63,14 @@ $("document").ready(function () {
     
     pic.src="img/loader.gif";
 
-    start.click(function () {
+    start.click(function () {  // Нажатие на кнопку старт
         var next = $("#next"),
             response = $(".response"),
             guessedSpan = $(".guessed span"),
             timeSpan = $(".time span"),
             scoreSpan = $(".score span");
 
-        if(currentNumber > 10) {
+        if(currentNumber > 10) {  // Рестарт игры
             score = 0; guessed = 0; currentNumber = 0;
             scoreSpan.text(score);
             guessedSpan.eq(0).text(guessed);

@@ -292,8 +292,12 @@ body {
     font-size: 30px;
 }
 
-.carousel-caption p, .carousel-caption a {
+.carousel-caption p {
     color: white !important;
+}
+
+.carousel-caption a {
+    margin-top: 5px;
 }
 
 .carousel-indicators li {
@@ -330,7 +334,6 @@ footer {
     padding-bottom: 20px;
     color: white;
 }
-
 
 /* Стили адаптивности */
 
@@ -425,6 +428,9 @@ footer {
         right: 3%;
         left: 3%;
     }
+    .btn {
+        font-size: 0.6em;
+    }
 }
 
 @media(min-width:321px) and (max-width:480px) {
@@ -469,6 +475,9 @@ footer {
         right: 3%;
         left: 3%;
     }
+    .btn {
+        font-size: 0.6em;
+    }
 }
 
 @media(min-width:481px) and (max-width:768px) {
@@ -512,6 +521,10 @@ footer {
     .carousel-caption p {
         font-size: 13px !important;
     }
+    .btn {
+        font-size: 0.6em;
+        height: 4em;
+    }
 }
 @media(min-width:769px) and (max-width:992px) {
     .adaptability_wrapper {
@@ -538,6 +551,10 @@ footer {
     }
     .carousel-caption p {
         font-size: 17px !important;
+    }
+    .btn {
+        font-size: 0.6em;
+        height: 3em;
     }
 }
 
