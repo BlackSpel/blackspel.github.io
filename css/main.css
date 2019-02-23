@@ -417,6 +417,9 @@ footer {
     .carousel-caption p {
         font-size: 10px !important;
     }
+    .carousel-caption a {
+        margin-bottom: 0;
+    }
     .skills {
         margin: 10px 0;
     }
@@ -425,11 +428,13 @@ footer {
         height: 10px;
     }
     .carousel-caption {
-        right: 3%;
-        left: 3%;
+        right: 0;
+        left: 0;
+        bottom: 0;
     }
     .btn {
-        font-size: 0.6em;
+        font-size: 0.8em;
+        padding: .100rem .30rem;
     }
     .job-github {
         display: none;
@@ -467,9 +472,6 @@ footer {
     .carousel-caption p {
         font-size: 12px !important;
     }
-    .carousel-caption a {
-        margin-bottom: 0;
-    }
     .skills {
         margin: 10px 0;
     }
@@ -478,13 +480,11 @@ footer {
         height: 10px;
     }
     .carousel-caption {
-        right: 0;
-        left: 0;
-        bottom: 0;
+        right: 3%;
+        left: 3%;
     }
     .btn {
-        font-size: 0.8em;
-        padding: .100rem .30rem;
+        font-size: 0.6em;
     }
     .job-github {
         display: none;
