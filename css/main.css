@@ -429,6 +429,8 @@ footer {
         left: 3%;
     }
     .btn {
+        height: 2em;
+        line-height: 0;
         font-size: 0.6em;
     }
 }
