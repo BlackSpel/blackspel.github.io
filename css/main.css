@@ -428,9 +428,9 @@ footer {
         height: 10px;
     }
     .carousel-caption {
-        right: 0;
-        left: 0;
-        bottom: 0;
+        right: 2%;
+        left: 2%;
+        bottom: 2%;
     }
     .btn {
         font-size: 0.8em;
@@ -484,7 +484,8 @@ footer {
         left: 3%;
     }
     .btn {
-        font-size: 0.6em;
+        font-size: 1em;
+        padding: .250rem .50rem;
     }
     .job-github {
         display: none;
@@ -533,8 +534,8 @@ footer {
         font-size: 13px !important;
     }
     .btn {
-        font-size: 0.6em;
-        height: 4em;
+        font-size: 1em;
+        height: 2.5em;
     }
 }
 @media(min-width:769px) and (max-width:992px) {
