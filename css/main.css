@@ -405,7 +405,8 @@ footer {
         height: 90px;
     }
     .contacts > p {
-        font-size: 10px;
+        font-size: 9px;
+        letter-spacing: 0;
     }
     .carousel-caption {
         padding-top: 20px;
@@ -465,6 +466,7 @@ footer {
     }
     .contacts > p {
         font-size: 10px;
+        letter-spacing: 0;
     }
     .carousel-caption h3 {
         font-size: 18px;
@@ -536,6 +538,9 @@ footer {
     .btn {
         font-size: 1em;
         height: 2.5em;
+    }
+    .contacts > p {
+        letter-spacing: 0;
     }
 }
 @media(min-width:769px) and (max-width:992px) {
