@@ -243,8 +243,8 @@ body {
     display: block;
 }
 
-.skills .container li:not(.a):hover {
-    background-color: rgba(0, 0, 0, 0.2);
+.block_completed_tasks .container a:hover {
+    text-decoration: underline;
 }
 
 .slide {
